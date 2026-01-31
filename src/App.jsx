@@ -43,7 +43,7 @@ function App() {
           }`}
         >
           <h1 className="font-bold text-3xl md:text-4xl cursor-pointer">
-            Ahmed<span className="text-amber-700">Khan</span>
+            Ahmed<span className="text-amber-700">Khan.</span>
           </h1>
 
           <div className="hidden md:flex items-center gap-10 text-[1.2rem]">
@@ -58,7 +58,7 @@ function App() {
             ))}
             <button
               onClick={() => handleScrollTo("contact")}
-              className="px-4 py-2 bg-amber-700 rounded-xl hover:bg-amber-800 transition"
+              className="px-4 py-2 bg-amber-700 text-black font-bold rounded-xl hover:bg-amber-800 transition"
             >
               Contact
             </button>
@@ -91,14 +91,22 @@ function App() {
             </p>
 
             <div className="mt-10 flex gap-6">
-              <button className="flex items-center gap-2 px-6 py-2 bg-amber-700 text-black rounded-xl font-bold hover:bg-amber-800">
+              <button
+                onClick={() => handleScrollTo("contact")}
+                className="flex items-center gap-2 px-6 py-2 bg-amber-700 text-black rounded-xl font-bold hover:bg-amber-800 transition"
+              >
                 <img src={userIcon} className="w-5 h-5" />
                 GET IN TOUCH
               </button>
-              <button className="px-6 py-2 bg-amber-700 text-black rounded-xl font-bold hover:bg-amber-800">
+                      
+              <button
+                onClick={() => handleScrollTo("todo-app")}
+                className="px-6 py-2 bg-amber-700 text-black rounded-xl font-bold hover:bg-amber-800 transition"
+              >
                 LIVE DEMO
               </button>
             </div>
+
           </div>
 
           <div className="flex-1 flex justify-center">
